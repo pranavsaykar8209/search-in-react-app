@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useState } from 'react';
+import Nav from './components/Nav';
+import Head from './components/Head';
+import Page2 from './components/Page2';
+import Page3 from './components/Page3';
+import Contact from './components/Contact';
+import Aboutus from './components/Aboutus';
+import Footer from './components/Footer';
+import Darkmode from './components/Darkmode';
+import logo1 from "./components/Images/moon.png"
 
-function App() {
+
+const App = () => {
+
+  // const [dark, setdark] = useState(true);
+
+  //   const changeMode =()=>{
+  //       if(dark===true){
+  //         setdark(false)
+  //       }else{
+  //         setdark(true)
+  //       }
+  //   }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  <div>
+  {/* <div className = {`${dark ? "dark" : "light"}`}> */}
+  {/* <div><img onClick={()=>{changeMode()}} className='darkmode' src={logo1} alt="" /></div> */}
+  <Nav/>
+  <Head/>
+  <Page2/>
+  {/* <Page3/> */}
+  <Contact/>
+  <Aboutus/>
+  <Footer/>
+  </div>);
+};
 
 export default App;
