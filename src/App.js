@@ -8,6 +8,9 @@ import Contact from './components/Contact';
 import Aboutus from './components/Aboutus';
 import Footer from './components/Footer';
 import Darkmode from './components/Darkmode';
+// import App from "./product-comparison-develop/product-comparison-develop/src/App.js";
+// import ProductComparison from '.components/product-comparison-develop/product-comparison-develop/src/components/ProductComparison';
+
 import logo1 from "./components/Images/moon.png"
 
 
@@ -22,19 +25,20 @@ const App = () => {
   //         setdark(true)
   //       }
   //   }
-  
+
   return (
-  <div>
-  {/* <div className = {`${dark ? "dark" : "light"}`}> */}
-  {/* <div><img onClick={()=>{changeMode()}} className='darkmode' src={logo1} alt="" /></div> */}
-  <Nav/>
-  <Head/>
-  <Page2/>
-  {/* <Page3/> */}
-  <Contact/>
-  <Aboutus/>
-  <Footer/>
-  </div>);
+    <div>
+      {/* <div className = {`${dark ? "dark" : "light"}`}> */}
+      {/* <div><img onClick={()=>{changeMode()}} className='darkmode' src={logo1} alt="" /></div> */}
+      
+      <Nav />
+      <Head />
+      <Page2 />
+      {/* <Page3/> */}
+      <Contact />
+      <Aboutus />
+      <Footer />
+    </div>);
 };
 
 export default App;

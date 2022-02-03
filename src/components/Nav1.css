@@ -3,9 +3,19 @@
     
     position: relative;
 }
+
+
+
+.mob_nav{
+    display: none;
+}
+
+
+
+
 .navbar .left .navlogo{
-    width: 25%;
-    height: 30px;
+    width: 140px;
+    height: 35px;
     margin-right: 30px;
     background-color: white;
     padding: 5px 10px;
@@ -13,7 +23,7 @@
 }
 .navlogo1{
     /* width: 30px; */
-    height: 30px;
+    height:40px;
     margin: 0 10px;
 }
 .navbar .left{

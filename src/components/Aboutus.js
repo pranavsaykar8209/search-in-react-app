@@ -6,7 +6,7 @@ const Aboutus = () => {
     return (
         <div className='container'>
             {/* <div className="temp1">The Focus : Intrigue, Engage, Convert, Repeat</div> */}
-            <div className="about1">Something More About US</div>
+            <div className="about1">About US</div>
             <div className="aboutus">
                 <div className="left">
                     
