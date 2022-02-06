@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import "./Responsive.css"
 import "./Head1.css"
@@ -13,9 +15,13 @@ import logo6 from "./Images/6.png"
 
 
 const Head = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
+
     return <div className='container'>
-        <div className="head flex">
-            <div className="left flex1">
+        <div className="head flex" >
+            <div className="left flex1" data-aos="fade-right">
                 <div className="temp">THE STAKES : REAL ESTATE ECOSYSTEM</div>
                 <div className="heading">Futuristic in-store shopping experiences.</div>
                 <p>Reinventing brick and mortar retail stores with futuristic in-store shopping experiences.</p>
@@ -26,8 +32,8 @@ const Head = () => {
                 </ul>
 
             </div>
-            <div className="right flex1">
-            <iframe width="420" height="345" src="https://youtu.be/wKHJDDGHnd0"></iframe>
+            <div className="right flex1" data-aos="fade-left">
+                <iframe width="420" height="345" src="https://youtu.be/wKHJDDGHnd0"></iframe>
             </div>
         </div>
 

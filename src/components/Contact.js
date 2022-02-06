@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import './cont1.css'
 // import "./responsive.css"
 
 const Contact = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
     return (
         <div>
-            <div className="container1">
+            <div className="container1" data-aos="fade-up">
                 <div className="content">
                     <div className="left-side">
                         <div className="address details">

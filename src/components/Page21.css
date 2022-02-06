@@ -110,6 +110,7 @@
     margin: 15px 100px;
     padding: 5px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .div1 .div2 p{

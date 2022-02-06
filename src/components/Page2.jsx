@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+
 import "./Responsive.css"
 import "./Page21.css"
 
@@ -24,11 +27,15 @@ import logo15 from "./searchin images/Ar.jpg"
 
 
 const Page2 = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+
     return <div className='container'>
         <div className="page2 flex">
             <div className="left flex1">
                 <div className="images">
-                    <img className='logo1' src={logo1} alt="" />
+                    <img className='logo1' src={logo1} alt="" data-aos="fade-up"/>
                     {/* <img className='logo2' src={logo2} alt="" /> */}
                 </div>
 
@@ -39,14 +46,14 @@ const Page2 = () => {
 
                 <div className="leftdiv">
                     <ul>
-                        <li>
+                        <li data-aos="zoom-in-up">
                         <img src={logo11} alt="" className="new" />
                         <div className="flex">
                             {/* <div className="left"> <img src={logo4} alt="faf" /></div> */}
                             <div className="right"> <div className="pagehead flex">Smart Shopping Cart</div><p>Tired of long billing lines? Introducing a state-of-the-art smart shopping cart. Built with advanced AI and sensor fusion tech for smart checkout. Just Scan and Go.</p></div>
                         </div>
                         </li>
-                        <li>
+                        <li data-aos="zoom-in-up">
                         <img src={logo14} alt="" className="new" />
                         <div className="flex">
                             {/* <div className="left"> <img src={logo4} alt="faf" /></div> */}
@@ -59,7 +66,7 @@ const Page2 = () => {
             <div className="right flex1 ">
                 <ul>
 
-                    <li className='tabview'>
+                    <li className='tabview' data-aos="zoom-in-up">
                         <img src={logo12} alt="" className="new" />
                         <div className="newdiv flex ">
                             {/* <div className="left"> <img src={logo3} alt="fa" /></div> */}
@@ -68,7 +75,7 @@ const Page2 = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li data-aos="zoom-in-up">
                         <img src={logo15} alt="" className="new" />
                         <div className="newdiv flex ">
                             {/* <div className="left"> <img src={logo3} alt="fa" /></div> */}
@@ -77,7 +84,7 @@ const Page2 = () => {
                         </div>
                     </li>
 
-                    <li>
+                    <li data-aos="zoom-in-up">
                         <img src={logo13} alt="" className="new" />
                         <div className="flex">
                             {/* <div className="left"> <img src={logo5} alt="fsa" /></div> */}
@@ -89,7 +96,7 @@ const Page2 = () => {
         </div>
 
 
-        <div className="heading2">
+        <div className="heading2" data-aos="fade-up">
             <div className="temp">The Process : One Word, Effortless</div>
             <div className="heading">Setup & Ready on a Schedule</div>
             <p>Neat and to-the-point onboarding to get you started so seamlessly that  <br />your Shopping will be live before you even really notice. </p>
@@ -99,18 +106,18 @@ const Page2 = () => {
 
         <div className="div1 flex">
             
-            <div className="div2 flex1">
+            <div className="div2 flex1" data-aos="flip-left">
                 <img src={logo8} alt="" />
                 <div className='div3'><span >User Friendly</span></div>
                 {/* <div className='div3'><span ></span></div> */}
                 <p>Easy-to-use mobile interface for better experience. </p>
             </div>
-            <div className="div2 flex1">
+            <div className="div2 flex1" data-aos="flip-left">
                 <img src={logo7} alt="" />
                 <div className='div3'><span >Offers & Deals</span></div>
                 <p>In-app offers and deals will be provided to the shoppers to keep them connected to the malls and stores. </p>
             </div>
-            <div className="div2 flex1">
+            <div className="div2 flex1" data-aos="flip-left">
                 <img src={logo9} alt="" />
                 <div className='div3'><span >Proximity Marketing</span></div>
                 <p>This will help store owners to advertise their products directly to the customers in proximity.</p>
@@ -119,7 +126,7 @@ const Page2 = () => {
 
         </div>
 
-        <div className="heading2">
+        <div className="heading2" data-aos="fade-up">
             <div className="temp">The Experience : Simply Amazing</div>
             <div className="heading">Fast, Simple & Available, Always.</div>
             <p>Enrich every step of your customers interaction with your projects, from <br />exploration to transactions, agreements, & beyond. </p>
