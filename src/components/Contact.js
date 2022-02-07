@@ -43,6 +43,9 @@ const Contact = () => {
                                 <input type="text" placeholder="Enter your email" />
                             </div>
                             <div className="input-box">
+                                <input type="text" placeholder="Enter your Company" />
+                            </div>
+                            <div className="input-box">
                                 <input type="text" placeholder="Enter your Phone" />
                             </div>
                             <div className="input-box message-box">

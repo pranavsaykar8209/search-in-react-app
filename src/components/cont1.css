@@ -4,7 +4,7 @@
 .container1{
   margin-top: 100px;
   width: 100%;
-  background: var(--secondary);
+  background: var(--dark);
   border-radius: 6px;
   padding: 50px 120px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -73,12 +73,13 @@
 .right-side .input-box textarea{
   height: 100%;
   width: 100%;
-  border: none;
+  border: 1px solid rgb(218, 218, 218);
   outline: none;
   font-size: 16px;
   background: white;
   color: var(--secondary);
   border-radius: 6px;
+
   padding: 0 15px;
   resize: none;
 }

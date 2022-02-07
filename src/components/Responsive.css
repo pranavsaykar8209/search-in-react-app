@@ -19,17 +19,23 @@
     -webkit-font-smotthing: antialiased;
 }
 
-body {
-    font-family: 'poppins'sans-serif;
-    background-color: black;
-}
+
 
 .dark {
     background-color: var(--dark);
+    --dark: #161616;
+    --pure: #ffffff;
 }
+
 
 .light {
     background-color: var(--light);
+    --dark: #ffffff;
+    --pure: #161616;
+}
+body {
+    font-family: 'poppins'sans-serif;
+    background-color: var(--dark);
 }
 
 
@@ -72,8 +78,8 @@ ul {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     font-weight: 700;
-    color: white !important;
-    border: 2px solid white;
+    color: var(--pure) !important;
+    border: 2px solid var(--pure);
     border-radius: 15px;
     outline: none;
     cursor: pointer;
@@ -111,6 +117,12 @@ ul {
     margin-top: 200px;
     text-align: center;
 }
+.darkmode{
+    width: 200px;
+    position: relative;
+    left: 180px;
+    top:70px
+}
 
 
 
@@ -146,6 +158,12 @@ ul {
 
 /* FOR TABLATES */
 @media(max-width:1024px) {
+    .darkmode{
+        left: 10px;
+        width: 40px !important;
+        height: 40px !important;
+        top: 75px;
+    }
     .container {
         margin: 0 2%;
         /* background-color: violet; */
@@ -225,7 +243,7 @@ ul {
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        background-color: #ffffff;
+        background-color: var(--pure);
     }
 
     .hamburger {
@@ -278,6 +296,12 @@ ul {
 /* --------------FOR MOBLIE--------------- */
 
 @media (max-width:576px) {
+    .darkmode{
+        left: 0;
+        width: 40px !important;
+        height: 40px !important;
+        top: 75px;
+    }
     .container {
         margin: 2%;
         /* background-color: violet; */

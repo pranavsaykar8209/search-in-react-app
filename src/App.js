@@ -16,20 +16,20 @@ import logo1 from "./components/Images/moon.png"
 
 const App = () => {
 
-  // const [dark, setdark] = useState(true);
+  const [dark, setdark] = useState(true);
 
-  //   const changeMode =()=>{
-  //       if(dark===true){
-  //         setdark(false)
-  //       }else{
-  //         setdark(true)
-  //       }
-  //   }
+    const changeMode =()=>{
+        if(dark===true){
+          setdark(false)
+        }else{
+          setdark(true)
+        }
+    }
 
   return (
-    <div>
-      {/* <div className = {`${dark ? "dark" : "light"}`}> */}
-      {/* <div><img onClick={()=>{changeMode()}} className='darkmode' src={logo1} alt="" /></div> */}
+    // <div>
+      <div className = {`${dark ? "dark" : "light"}`}>
+      <div><img onClick={()=>{changeMode()}} className='darkmode' src={logo1} alt="" /></div>
       
       <Nav />
       <Head />

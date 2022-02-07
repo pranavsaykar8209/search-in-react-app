@@ -11,7 +11,7 @@
 
 .head .btn:hover{
     background-color: var(--primary);
-    color: black !important;
+    color: var(--dark) !important;
 }
 .head .left{
     margin-top: 50px;
